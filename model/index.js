@@ -79,7 +79,7 @@ const exportModels = {
     } catch (err) {
       console.log("initErr:", err.message);
     }
-    _.assign(exportModels, models, sequelize);
+    _.assign(exportModels, models, { sequelize });
   },
 };
 
